@@ -13,7 +13,7 @@ keepalived-service:
     - ROUTEID: haproxy_ha
     - STATEID: MASTER
     - PRIORITYID: 150
-    {% elif grains['fqdn'] == 'controller2' %}
+    {% elif grains['fqdn'] == 'compute' %}
     - ROUTEID: haproxy_ha
     - STATEID: BACKUP
     - PRIORITYID: 100
