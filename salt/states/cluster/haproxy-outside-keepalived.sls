@@ -13,7 +13,7 @@ keepalived-service:
     - ROUTEID: haproxy_ha
     - STATEID: MASTER
     - PRIORITYID: 150
-    {% elif grains['fqdn'] == 'saltstack-node2.example.com' %}
+    {% elif grains['fqdn'] == 'controller2' %}
     - ROUTEID: haproxy_ha
     - STATEID: BACKUP
     - PRIORITYID: 100
